@@ -1,0 +1,101 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "Open in MinGW Console",
+      "appliesTo": "/",
+      "type": "launch",
+      "contextType": "custom",
+      "inheritEnvironments": [ "Mingw64" ],
+      "command": "C:\\msys64\\msys2_shell.cmd",
+      "args": [ "-mingw64 -where ${workspaceRoot}" ]
+    },
+    {
+      "taskLabel": "compile",
+      "appliesTo": "*.cpp",
+      "type": "launch",
+      "contextType": "custom",
+      "inheritEnvironments": [ "mingw_64" ],
+      "workingDirectory": "${workspaceRoot}",
+      "command": "${env.COMSPEC}",
+      "args": [ "make build/${relativeFile}.o && echo DONE." ]
+    },
+    {
+      "taskLabel": "make",
+      "appliesTo": "Makefile",
+      "type": "launch",
+      "contextType": "custom",
+      "inheritEnvironments": [ "mingw_64" ],
+      "workingDirectory": "${workspaceRoot}",
+      "command": "${env.COMSPEC}",
+      "args": [ "make && echo DONE." ]
+    },
+    {
+      "taskLabel": "make clean",
+      "appliesTo": "Makefile",
+      "type": "launch",
+      "contextType": "custom",
+      "inheritEnvironments": [ "mingw_64" ],
+      "workingDirectory": "${workspaceRoot}",
+      "command": "${env.COMSPEC}",
+      "args": [ "make clean && echo DONE." ]
+    },
+    {
+      "taskLabel": "make rebuild",
+      "appliesTo": "Makefile",
+      "type": "launch",
+      "contextType": "custom",
+      "inheritEnvironments": [ "mingw_64" ],
+      "workingDirectory": "${workspaceRoot}",
+      "command": "${env.COMSPEC}",
+      "args": [ "make clean && make && echo DONE." ]
+    },
+    {
+      "taskLabel": "make dep",
+      "appliesTo": "Makefile",
+      "type": "launch",
+      "contextType": "custom",
+      "inheritEnvironments": [ "mingw_64" ],
+      "workingDirectory": "${workspaceRoot}",
+      "command": "${env.COMSPEC}",
+      "args": [ "make dep && echo DONE." ]
+    },
+    {
+      "taskLabel": "make dist",
+      "appliesTo": "Makefile",
+      "type": "launch",
+      "contextType": "custom",
+      "inheritEnvironments": [ "mingw_64" ],
+      "workingDirectory": "${workspaceRoot}",
+      "command": "${env.COMSPEC}",
+      "args": [ "make dist && echo DONE." ]
+    },
+    {
+      "taskLabel": "make install",
+      "appliesTo": "Makefile",
+      "type": "launch",
+      "contextType": "custom",
+      "inheritEnvironments": [ "mingw_64" ],
+      "workingDirectory": "${workspaceRoot}",
+      "command": "${env.COMSPEC}",
+      "args": [ "make install && echo DONE." ]
+    },
+    {
+      "taskLabel": "make run",
+      "appliesTo": "Makefile",
+      "type": "launch",
+      "contextType": "custom",
+      "inheritEnvironments": [ "mingw_64" ],
+      "workingDirectory": "${env.RACK_DIR}",
+      "command": "${env.COMSPEC}",
+      "args": [ "make run && echo DONE." ]
+    },
+    {
+      "taskLabel": "Rack.exe",
+      "appliesTo": "Makefile",
+      "type": "launch",
+      "contextType": "custom",
+      "command": "C:\\Program Files\\VCV\\Rack\\Rack.exe"
+    }
+  ]
+}
