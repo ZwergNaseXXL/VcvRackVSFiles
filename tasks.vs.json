@@ -6,7 +6,7 @@
       "appliesTo": "/",
       "type": "launch",
       "contextType": "custom",
-      "inheritEnvironments": [ "Mingw64" ],
+      "inheritEnvironments": [ "mingw_64" ],
       "command": "C:\\msys64\\msys2_shell.cmd",
       "args": [ "-mingw64 -where ${workspaceRoot}" ]
     },
@@ -95,7 +95,7 @@
       "appliesTo": "Makefile",
       "type": "launch",
       "contextType": "custom",
-      "command": "C:\\Program Files\\VCV\\Rack\\Rack.exe"
+      "command": "C:\\Program Files\\VCV\\Rack2Free\\Rack.exe"
     }
   ]
 }

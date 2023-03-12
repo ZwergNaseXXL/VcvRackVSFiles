@@ -1,0 +1,16 @@
+{
+  "version": "0.2.1",
+  "defaults": {},
+  "configurations": [
+    {
+      "type": "cppdbg",
+      "name": "gdb Rack",
+      "project": "..\\..\\Rack.exe",
+      "cwd": "~/../../Documents/github/VCVRack",
+      "program": "Rack.exe",
+      "args": [ "-d" ],
+      "MIMode": "gdb",
+      "miDebuggerPath": "c:\\msys64\\mingw64\\bin\\gdb.exe"
+    }
+  ]
+}
