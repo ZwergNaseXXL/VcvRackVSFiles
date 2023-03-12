@@ -10,7 +10,7 @@ JSON files for working with VCV Rack and plugins in Visual Studio 2019, using it
 
 ### Benefits
 
-* You now have full Intellisense support from VS for your MinGW installation.
+* You now have full Intellisense support from VS for gcc's standard libraries, Rack's sources and your plugin's sources.
 * In VS's Solution Explorer, the following commands are available via right-click:
 	* On the root folder: Open in MinGW console
 	* On any *.cpp file: Compile
