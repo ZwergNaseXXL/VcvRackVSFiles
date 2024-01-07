@@ -28,7 +28,7 @@
       "inheritEnvironments": [ "mingw_64" ],
       "workingDirectory": "${workspaceRoot}",
       "command": "${env.COMSPEC}",
-      "args": [ "make && echo DONE." ]
+      "args": [ "make -j4 && echo DONE." ]
     },
     {
       "taskLabel": "make clean",
@@ -48,7 +48,7 @@
       "inheritEnvironments": [ "mingw_64" ],
       "workingDirectory": "${workspaceRoot}",
       "command": "${env.COMSPEC}",
-      "args": [ "make clean && make && echo DONE." ]
+      "args": [ "make clean && make -j4 && echo DONE." ]
     },
     {
       "taskLabel": "make dep",
@@ -58,7 +58,7 @@
       "inheritEnvironments": [ "mingw_64" ],
       "workingDirectory": "${workspaceRoot}",
       "command": "${env.COMSPEC}",
-      "args": [ "make dep && echo DONE." ]
+      "args": [ "make dep -j4 && echo DONE." ]
     },
     {
       "taskLabel": "make dist",
@@ -95,7 +95,7 @@
       "appliesTo": "Makefile",
       "type": "launch",
       "contextType": "custom",
-      "command": "C:\\Program Files\\VCV\\Rack2Free\\Rack.exe"
+      "command": "C:\\Program Files\\VCV\\Rack2Pro\\Rack.exe"
     }
   ]
 }

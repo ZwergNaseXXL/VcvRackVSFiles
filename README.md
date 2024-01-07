@@ -1,11 +1,11 @@
 # VcvRackVSFiles
 
-JSON files for working with VCV Rack and plugins in Visual Studio 2019, using its "Open Folder" functionality.
+JSON files for working with VCV Rack and plugins in Visual Studio 2019/2022, using its "Open Folder" functionality.
 
 ### Get started
 
 * Put the three JSON files into your plugin development directory.
-* Adjust the paths and version numbers in the files according to your MinGW installation.
+* Adjust the paths and version numbers in the files according to your MinGW and VCV Rack installations.
 * Open your plugin development directory in Visual Studio, either in VS via File -> Open -> Folder or from the File Explorer via right-click -> "Open with Visual Studio".
 
 ### Benefits
